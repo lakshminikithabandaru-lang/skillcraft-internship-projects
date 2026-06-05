@@ -2,21 +2,31 @@
 <html>
 
 <head>
-    <title>To-Do Web App</title>
+    <title>Stopwatch Web App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="container">
-        <h2>To-Do List</h2>
 
-        <input type="text" id="taskInput" placeholder="Enter Task">
-        <input type="datetime-local" id="taskDate">
+        <h1>Stopwatch</h1>
 
-        <button onclick="addTask()">Add Task</button>
+        <div id="display">
+            00:00:00
+        </div>
 
-        <ul id="taskList"></ul>
+        <div class="buttons">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+            <button onclick="lapTimer()">Lap</button>
+        </div>
+
+        <h2>Lap Times</h2>
+
+        <ul id="laps"></ul>
+
     </div>
 
     <script src="script.js"></script>
